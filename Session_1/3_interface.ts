@@ -1,29 +1,29 @@
 //An interface is a syntactical contract that an entity should conform to
 
-function testA(person: { name: string, age: number }) {
-    console.log(person.name);
-    console.log(person.age);
+function draw(point: { x: number, y: number }) {
+    console.log(point.x);
+    console.log(point.y);
 }
 
-testA({ name: "A", age: 10 });
+draw({ x: 1, y: 1 });
 
 //There may be other functions also requires same argument signature then we will have to
 //write the whole signature again
 
-function otherFunction(person: { name: string, age: number }) {
+function getDistance(point: { x: number, y: number }) {
 
 }
 
 //Better apporach define a interface
-interface Person {
-    name: string,
-    age: number
+interface Point {
+    x: number,
+    y: number
 }
 
 
-function testB(person: Person) {
-    console.log(person.name);
-    console.log(person.age);
+function drawPoint(point: Point) {
+    console.log(point.x);
+    console.log(point.y);
 }
 
-testB({ name: "A", age: 10 });
+drawPoint({ x: 1 , y: 10 });
