@@ -37,4 +37,17 @@ let p: Point_5_A = new Point_5_A(1, 100);
 p.draw();
 
 
+//Shortcut to define member vaiables
 
+class Point_5_B{
+    constructor(public x:number,private y:number){
+
+    }
+
+    draw() {
+        console.log("X=" + this.x + " Y=" + this.y);
+    }
+}
+
+let pp : Point_5_B = new Point_5_B(200,500);
+pp.draw();
