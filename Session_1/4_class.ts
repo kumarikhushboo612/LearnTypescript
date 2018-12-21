@@ -29,7 +29,7 @@ class MyUpdatedPoint {
     } */
 
     //optional argument in constructor, in this case x is mandatory and y is optional
-    constructor(x: number , y?: number) {
+    constructor(x: number , y: number) {
         this.x = x;
         this.y = y;
     }
